@@ -24,7 +24,7 @@ export function Header() {
         {/* Logo */}
         <div className="flex items-center gap-3">
           <img
-            src="/manus-storage/sugarcloud-logo_ee733bcb.png"
+            src="/zel-storage/sugarcloud-logo_ee733bcb.png"
             alt="Sugarcloud Logo"
             className="w-10 h-10 md:w-12 md:h-12 object-contain"
           />
