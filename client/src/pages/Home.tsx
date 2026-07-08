@@ -173,9 +173,9 @@ export default function Home() {
               </div>
               <button
                 onClick={() => {
-                  const contactSection = document.getElementById('contact');
-                  if (contactSection) {
-                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                  const footerSection = document.getElementById('footer');
+                  if (footerSection) {
+                    footerSection.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
                 className="w-full bg-dusty-rose hover:bg-deep-mauve text-warm-cream py-3 rounded-lg font-semibold transition-all duration-200"
@@ -206,9 +206,9 @@ export default function Home() {
               </div>
               <button
                 onClick={() => {
-                  const contactSection = document.getElementById('contact');
-                  if (contactSection) {
-                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                  const footerSection = document.getElementById('footer');
+                  if (footerSection) {
+                    footerSection.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
                 className="w-full bg-dusty-rose hover:bg-deep-mauve text-warm-cream py-3 rounded-lg font-semibold transition-all duration-200"
@@ -241,9 +241,9 @@ export default function Home() {
               </div>
               <button
                 onClick={() => {
-                  const contactSection = document.getElementById('contact');
-                  if (contactSection) {
-                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                  const footerSection = document.getElementById('footer');
+                  if (footerSection) {
+                    footerSection.scrollIntoView({ behavior: 'smooth' });
                   }
                 }}
                 className="w-full bg-dusty-rose hover:bg-deep-mauve text-warm-cream py-3 rounded-lg font-semibold transition-all duration-200"
@@ -273,9 +273,9 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer id="contact" className="bg-deep-mauve text-warm-cream py-12 md:py-16">
+      <footer id="footer" className="bg-deep-mauve text-warm-cream py-12 md:py-16">
         <div className="container max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <div>
               <h3 className="text-xl font-bold mb-4">Sugarcloud co.</h3>
               <p className="text-warm-cream/80 mb-6">
@@ -310,7 +310,7 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.117.6c-.79.263-1.473.557-2.115 1.194-.643.642-.94 1.33-1.2 2.11-.266.79-.47 1.66-.53 2.94C.064 8.327 0 8.74 0 12s.015 3.673.072 4.947c.06 1.277.261 2.148.528 2.913.263.788.555 1.472 1.2 2.11.645.645 1.33.957 2.11 1.2.763.266 1.636.477 2.913.529C8.333 23.986 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.261 2.913-.528.788-.263 1.472-.555 2.11-1.2.645-.645.957-1.33 1.2-2.11.266-.763.477-1.636.529-2.913.058-1.273.072-1.687.072-4.947s-.015-3.673-.072-4.947c-.06-1.277-.261-2.148-.528-2.913-.263-.788-.555-1.472-1.2-2.11C21.557 1.406 20.873 1.104 20.1.84c-.763-.266-1.636-.477-2.913-.529C15.667.064 15.26 0 12 0zm0 2.16c3.203 0 3.585.009 4.849.070 1.171.054 1.805.244 2.227.408.561.217.96.477 1.382.896.419.42.679.821.896 1.381.164.422.354 1.057.408 2.227.061 1.264.07 1.645.07 4.849 0 3.203-.009 3.585-.07 4.849-.054 1.171-.244 1.805-.408 2.227-.217.561-.477.96-.896 1.382-.42.419-.821.679-1.381.896-.422.164-1.057.354-2.227.408-1.264.061-1.645.07-4.849.07-3.203 0-3.585-.009-4.849-.07-1.171-.054-1.805-.244-2.227-.408-.561-.217-.96-.477-1.382-.896-.419-.42-.679-.821-.896-1.381-.164-.422-.354-1.057-.408-2.227-.061-1.264-.07-1.645-.07-4.849 0-3.203.009-3.585.07-4.849.054-1.171.244-1.805.408-2.227.217-.561.477-.96.896-1.382.42-.419.821-.679 1.381-.896.422-.164 1.057-.354 2.227-.408 1.264-.061 1.645-.07 4.849-.07zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z" />
+                    <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.117.6c-.79.263-1.473.557-2.115 1.194-.643.642-.94 1.33-1.2 2.11-.266.79-.47 1.66-.53 2.94C.064 8.327 0 8.74 0 12s.015 3.673.072 4.947c.06 1.277.261 2.148.528 2.913.263.788.555 1.472 1.2 2.11.645.645 1.33.957 2.11 1.2.763.266 1.636.477 2.913.529C8.333 23.986 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.261 2.913-.528.788-.263 1.472-.555 2.11-1.2.645-.645.957-1.33 1.2-2.11.266-.763.477-1.636.529-2.913.058-1.273.072-1.687.072-4.947s-.015-3.673-.072-4.947c-.06-1.277-.261-2.148-.528-2.913-.263-.788-.555-1.472-1.2-2.11C21.557 1.406 20.873 1.104 20.1.84c-.763-.266-1.636-.477-2.913-.529C15.667.064 15.26 0 12 0zm0 2.16c3.203 0 3.585.009 4.849.07 1.171.054 1.805.244 2.227.408.561.217.96.477 1.382.896.419.42.679.821.896 1.381.164.422.354 1.057.408 2.227.061 1.264.07 1.645.07 4.849 0 3.203-.009 3.585-.07 4.849-.054 1.171-.244 1.805-.408 2.227-.217.561-.477.96-.896 1.382-.42.419-.821.679-1.381.896-.422.164-1.057.354-2.227.408-1.264.061-1.645.07-4.849.07-3.203 0-3.585-.009-4.849-.07-1.171-.054-1.805-.244-2.227-.408-.561-.217-.96-.477-1.382-.896-.419-.42-.679-.821-.896-1.381-.164-.422-.354-1.057-.408-2.227-.061-1.264-.07-1.645-.07-4.849 0-3.203.009-3.585.07-4.849.054-1.171.244-1.805.408-2.227.217-.561.477-.96.896-1.382.42-.419.821-.679 1.381-.896.422-.164 1.057-.354 2.227-.408 1.264-.061 1.645-.07 4.849-.07z" />
                   </svg>
                 </a>
               </div>
@@ -328,18 +328,7 @@ export default function Home() {
                     About
                   </a>
                 </li>
-                <li>
-                  <a href="#contact" className="hover:text-warm-cream transition">
-                    Contact
-                  </a>
-                </li>
               </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <p className="text-warm-cream/80 mb-2">Facebook: sugarcloud co.</p>
-              <p className="text-warm-cream/80 mb-2">Facebook: Joris Dianne Ferrer Pinoon</p>
-              <p className="text-warm-cream/80">Phone: +63 (XXX) XXX-XXXX</p>
             </div>
           </div>
           <div className="border-t border-warm-cream/20 pt-8 text-center text-warm-cream/60">
