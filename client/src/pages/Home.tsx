@@ -1,6 +1,7 @@
 import { Header } from '@/components/Header';
 import { ProductCard } from '@/components/ProductCard';
 import { ScallopedDivider } from '@/components/ScallopedDivider';
+import { ContactForm } from '@/components/ContactForm';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 export default function Home() {
@@ -272,6 +273,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Scalloped Divider */}
+      <ScallopedDivider color="#F3E5E7" position="bottom" />
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 md:py-32 bg-warm-cream">
+        <div className="container max-w-2xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <p className="text-dusty-rose text-sm md:text-base font-semibold tracking-widest mb-4">
+              GET IN TOUCH
+            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-deep-mauve mb-6">
+              Contact Us
+            </h2>
+            <p className="text-lg text-deep-mauve/70">
+              Have questions about our cookies or want to place a custom order? We'd love to hear from you!
+            </p>
+          </div>
+
+          <div className="bg-blush-pink p-8 md:p-12 rounded-2xl border-2 border-dusty-rose/20">
+            <ContactForm />
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer id="footer" className="bg-deep-mauve text-warm-cream py-12 md:py-16">
         <div className="container max-w-6xl mx-auto px-4">
@@ -326,6 +351,11 @@ export default function Home() {
                 <li>
                   <a href="#about" className="hover:text-warm-cream transition">
                     About
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" className="hover:text-warm-cream transition">
+                    Contact
                   </a>
                 </li>
               </ul>
