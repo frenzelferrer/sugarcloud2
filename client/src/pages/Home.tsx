@@ -44,7 +44,15 @@ export default function Home() {
               <p className="text-lg text-deep-mauve/80 mb-8 leading-relaxed max-w-lg">
                 Every cookie is crafted with premium ingredients and care. From our kitchen to your table, experience the warmth of artisanal baking.
               </p>
-              <button className="bg-dusty-rose hover:bg-deep-mauve text-warm-cream px-8 py-4 rounded-full font-semibold transition-all duration-200 hover:shadow-xl text-lg">
+              <button
+                onClick={() => {
+                  const menuSection = document.getElementById('menu');
+                  if (menuSection) {
+                    menuSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="bg-dusty-rose hover:bg-deep-mauve text-warm-cream px-8 py-4 rounded-full font-semibold transition-all duration-200 hover:shadow-xl text-lg"
+              >
                 Order Now
               </button>
             </div>
@@ -163,8 +171,16 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <button className="w-full bg-dusty-rose hover:bg-deep-mauve text-warm-cream py-3 rounded-lg font-semibold transition-all duration-200">
-                Add to Cart
+              <button
+                onClick={() => {
+                  const contactSection = document.getElementById('contact');
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="w-full bg-dusty-rose hover:bg-deep-mauve text-warm-cream py-3 rounded-lg font-semibold transition-all duration-200"
+              >
+                Order Now
               </button>
             </div>
 
@@ -188,8 +204,16 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <button className="w-full bg-dusty-rose hover:bg-deep-mauve text-warm-cream py-3 rounded-lg font-semibold transition-all duration-200">
-                Add to Cart
+              <button
+                onClick={() => {
+                  const contactSection = document.getElementById('contact');
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="w-full bg-dusty-rose hover:bg-deep-mauve text-warm-cream py-3 rounded-lg font-semibold transition-all duration-200"
+              >
+                Order Now
               </button>
             </div>
 
@@ -215,8 +239,16 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <button className="w-full bg-dusty-rose hover:bg-deep-mauve text-warm-cream py-3 rounded-lg font-semibold transition-all duration-200">
-                Add to Cart
+              <button
+                onClick={() => {
+                  const contactSection = document.getElementById('contact');
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+                className="w-full bg-dusty-rose hover:bg-deep-mauve text-warm-cream py-3 rounded-lg font-semibold transition-all duration-200"
+              >
+                Order Now
               </button>
             </div>
           </div>

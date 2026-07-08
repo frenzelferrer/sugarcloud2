@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -12,6 +13,13 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleOrderNow = () => {
+    const menuSection = document.getElementById('menu');
+    if (menuSection) {
+      menuSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -20,19 +28,19 @@ export function Header() {
           : 'bg-transparent'
       }`}
     >
-      <div className="container max-w-6xl mx-auto px-4 py-4 md:py-6 flex items-center justify-between">
+      <div className="container max-w-6xl mx-auto px-4 py-3 md:py-5 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 md:gap-4">
           <img
             src="/images/sugarcloud-logo.png"
             alt="Sugarcloud Logo"
-            className="w-10 h-10 md:w-12 md:h-12 object-contain"
+            className="w-14 h-14 md:w-16 md:h-16 object-contain"
           />
           <div className="hidden sm:block">
-            <h1 className="text-xl md:text-2xl font-bold text-deep-mauve">
+            <h1 className="text-lg md:text-2xl font-bold text-deep-mauve">
               Sugarcloud
             </h1>
-            <p className="text-xs text-dusty-rose font-medium">
+            <p className="text-xs md:text-sm text-dusty-rose font-medium">
               Homemade Cookies
             </p>
           </div>
@@ -61,7 +69,10 @@ export function Header() {
         </nav>
 
         {/* CTA Button */}
-        <button className="bg-dusty-rose hover:bg-deep-mauve text-warm-cream px-4 md:px-6 py-2 rounded-full font-semibold transition-all duration-200 hover:shadow-lg text-sm md:text-base">
+        <button
+          onClick={handleOrderNow}
+          className="bg-dusty-rose hover:bg-deep-mauve text-warm-cream px-4 md:px-6 py-2 rounded-full font-semibold transition-all duration-200 hover:shadow-lg text-sm md:text-base"
+        >
           Order Now
         </button>
       </div>
