@@ -1,7 +1,7 @@
 import { Header } from '@/components/Header';
 import { ProductCard } from '@/components/ProductCard';
 import { ScallopedDivider } from '@/components/ScallopedDivider';
-import { ContactForm } from '@/components/ContactForm';
+
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 export default function Home() {
@@ -291,8 +291,48 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="bg-blush-pink p-8 md:p-12 rounded-2xl border-2 border-dusty-rose/20">
-            <ContactForm />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <a
+              href="https://www.facebook.com/profile.php?id=61590415774229"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-6 p-8 bg-blush-pink rounded-2xl border-2 border-dusty-rose/20 hover:border-dusty-rose hover:shadow-lg transition-all duration-300 group"
+            >
+              <div className="w-16 h-16 bg-dusty-rose/10 rounded-full flex items-center justify-center group-hover:bg-dusty-rose/20 transition-colors">
+                <svg
+                  className="w-8 h-8 fill-dusty-rose"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-deep-mauve mb-1">Facebook</h3>
+                <p className="text-deep-mauve/60">Follow us for updates and news</p>
+              </div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/sugarcloud.cookie/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-6 p-8 bg-blush-pink rounded-2xl border-2 border-dusty-rose/20 hover:border-dusty-rose hover:shadow-lg transition-all duration-300 group"
+            >
+              <div className="w-16 h-16 bg-dusty-rose/10 rounded-full flex items-center justify-center group-hover:bg-dusty-rose/20 transition-colors">
+                <svg
+                  className="w-8 h-8 fill-dusty-rose"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.117.6c-.79.263-1.473.557-2.115 1.194-.643.642-.94 1.33-1.2 2.11-.266.79-.47 1.66-.53 2.94C.064 8.327 0 8.74 0 12s.015 3.673.072 4.947c.06 1.277.261 2.148.528 2.913.263.788.555 1.472 1.2 2.11.645.645 1.33.957 2.11 1.2.763.266 1.636.477 2.913.529C8.333 23.986 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.261 2.913-.528.788-.263 1.472-.555 2.11-1.2.645-.645.957-1.33 1.2-2.11.266-.763.477-1.636.529-2.913.058-1.273.072-1.687.072-4.947s-.015-3.673-.072-4.947c-.06-1.277-.261-2.148-.528-2.913-.263-.788-.555-1.472-1.2-2.11C21.557 1.406 20.873 1.104 20.1.84c-.763-.266-1.636-.477-2.913-.529C15.667.064 15.26 0 12 0zm0 2.16c3.203 0 3.585.009 4.849.07 1.171.054 1.805.244 2.227.408.561.217.96.477 1.382.896.419.42.679.821.896 1.381.164.422.354 1.057.408 2.227.061 1.264.07 1.645.07 4.849 0 3.203-.009 3.585-.07 4.849-.054 1.171-.244 1.805-.408 2.227-.217.561-.477.96-.896 1.382-.42.419-.821.679-1.381.896-.422.164-1.057.354-2.227.408-1.264.061-1.645.07-4.849.07-3.203 0-3.585-.009-4.849-.07-1.171-.054-1.805-.244-2.227-.408-.561-.217-.96-.477-1.382-.896-.419-.42-.679-.821-.896-1.381-.164-.422-.354-1.057-.408-2.227-.061-1.264-.07-1.645-.07-4.849 0-3.203.009-3.585.07-4.849.054-1.171.244-1.805.408-2.227.217-.561.477-.96.896-1.382.42-.419.821-.679 1.381-.896.422-.164 1.057-.354 2.227-.408 1.264-.061 1.645-.07 4.849-.07z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-deep-mauve mb-1">Instagram</h3>
+                <p className="text-deep-mauve/60">See our latest cookie creations</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
