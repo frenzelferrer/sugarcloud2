@@ -303,11 +303,13 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div>
+                       <div>
               <h4 className="font-semibold mb-4">Contact</h4>
-              <p className="text-warm-cream/80 mb-2">Email: hello@sugarcloud.co</p>
+              <p className="text-warm-cream/80 mb-2">Facebook: sugarcloud co.</p>
+              <p className="text-warm-cream/80 mb-2">Facebook: Joris Dianne Ferrer Pinoon</p>
               <p className="text-warm-cream/80">Phone: +63 (XXX) XXX-XXXX</p>
             </div>
+
           </div>
           <div className="border-t border-warm-cream/20 pt-8 text-center text-warm-cream/60">
             <p>
