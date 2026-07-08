@@ -337,7 +337,8 @@ export default function Home() {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
-              <p className="text-warm-cream/80 mb-2">Email: hello@sugarcloud.co</p>
+              <p className="text-warm-cream/80 mb-2">Facebook: sugarcloud co.</p>
+              <p className="text-warm-cream/80 mb-2">Facebook: Joris Dianne Ferrer Pinoon</p>
               <p className="text-warm-cream/80">Phone: +63 (XXX) XXX-XXXX</p>
             </div>
           </div>
